@@ -1,0 +1,110 @@
+Average loss after 10 episodes: 0.24794635324162287
+Episode 0, Total Reward: -947.0
+Average loss after 10 episodes: 0.7324373105353494
+Episode 10, Total Reward: -90.03466887311095
+Average loss after 10 episodes: 0.9828751797813817
+Episode 20, Total Reward: 442.5061566379155
+Average loss after 10 episodes: 0.940284970396781
+Episode 30, Total Reward: 969.0
+Average loss after 10 episodes: 0.8768474774353532
+Episode 40, Total Reward: 953.2278367606541
+Average loss after 10 episodes: 0.8763980047873767
+Episode 50, Total Reward: 976.0
+Average loss after 10 episodes: 0.8305598700782693
+Episode 60, Total Reward: 939.0
+Average loss after 10 episodes: 0.8172370041924643
+Episode 70, Total Reward: 573.926908866537
+Average loss after 10 episodes: 0.8088940304885822
+Episode 80, Total Reward: -264.0
+Average loss after 10 episodes: 0.7858863584786298
+Episode 90, Total Reward: 710.0
+Average loss after 10 episodes: 0.7651867609159405
+Episode 100, Total Reward: 940.0
+Average loss after 10 episodes: 0.7162640509169653
+Episode 110, Total Reward: 996.0
+Average loss after 10 episodes: 0.6868603816159455
+Episode 120, Total Reward: 991.926908866537
+Average loss after 10 episodes: 0.7155538647773255
+Episode 130, Total Reward: 180.74171257611818
+Average loss after 10 episodes: 0.7388697293056434
+Episode 140, Total Reward: 896.0
+Average loss after 10 episodes: 0.7237054136852581
+Episode 150, Total Reward: -595.6825560137534
+Average loss after 10 episodes: 0.7701362064872604
+Episode 160, Total Reward: 866.0
+Average loss after 10 episodes: 0.7855584874214878
+Episode 170, Total Reward: 979.926908866537
+Average loss after 10 episodes: 0.7941078189834656
+Episode 180, Total Reward: -439.7242172473849
+Average loss after 10 episodes: 0.8302161553288361
+Episode 190, Total Reward: 590.2887157802031
+Average loss after 10 episodes: 0.8302449078020822
+Episode 200, Total Reward: 940.0
+Average loss after 10 episodes: 0.8139596850986026
+Episode 210, Total Reward: 939.926908866537
+Average loss after 10 episodes: 0.8124117535720783
+Episode 220, Total Reward: 989.926908866537
+Average loss after 10 episodes: 0.7618746188947878
+Episode 230, Total Reward: 979.0
+Average loss after 10 episodes: 0.7074215565871196
+Episode 240, Total Reward: 992.0
+Average loss after 10 episodes: 0.6520434807318141
+Episode 250, Total Reward: 880.8425696970999
+Average loss after 10 episodes: 0.5620168901059732
+Episode 260, Total Reward: 991.926908866537
+Average loss after 10 episodes: 0.48117987053298145
+Episode 270, Total Reward: 984.0
+Average loss after 10 episodes: 0.4122846293014537
+Episode 280, Total Reward: 969.0
+Average loss after 10 episodes: 0.29892561939578366
+Episode 290, Total Reward: 866.6351223333795
+Average loss after 10 episodes: 0.28698317126419204
+Episode 300, Total Reward: -384.3911930427204
+Average loss after 10 episodes: 0.3096521075659123
+Episode 310, Total Reward: 971.0044423860869
+Average loss after 10 episodes: 0.2674719903328683
+Episode 320, Total Reward: 997.926908866537
+Average loss after 10 episodes: 0.3074484181390014
+Episode 330, Total Reward: 561.2648701268382
+Average loss after 10 episodes: 0.33832880455288156
+Episode 340, Total Reward: 814.0
+Average loss after 10 episodes: 0.3388398404081029
+Episode 350, Total Reward: 959.0
+Average loss after 10 episodes: 0.367453260288622
+Episode 360, Total Reward: 924.0
+Average loss after 10 episodes: 0.40910036924232046
+Episode 370, Total Reward: 984.0
+Average loss after 10 episodes: 0.4276330622306383
+Episode 380, Total Reward: 1001.926908866537
+Average loss after 10 episodes: 0.4588804382964435
+Episode 390, Total Reward: 995.926908866537
+Average loss after 10 episodes: 0.4307504885774328
+Episode 400, Total Reward: 999.926908866537
+Average loss after 10 episodes: 0.40547036284885085
+Episode 410, Total Reward: 997.926908866537
+Average loss after 10 episodes: 0.45899278699639307
+Episode 420, Total Reward: -441.3210292026291
+Average loss after 10 episodes: 0.48611882316371596
+Episode 430, Total Reward: 803.926908866537
+Average loss after 10 episodes: 0.5322909660667062
+Episode 440, Total Reward: 319.1924425656016
+Average loss after 10 episodes: 0.6093841288936328
+Episode 450, Total Reward: 921.926908866537
+Average loss after 10 episodes: 0.6637601661551521
+Episode 460, Total Reward: 244.0
+Average loss after 10 episodes: 0.7069644156709847
+Episode 470, Total Reward: 995.926908866537
+Average loss after 10 episodes: 0.765157710241369
+Episode 480, Total Reward: 974.0
+Average loss after 10 episodes: 0.8209008631359535
+Episode 490, Total Reward: 922.0
+Training completed.
+Total Episodes: 500
+Average Reward: 568.8426073527385
+Max Reward: 1004.0
+Min Reward: -1004.0
+----------------------------------------------------
+lr =0.005, gamma = 0.99, buffer_size = 10000, batch_size = 64
+self.epsilon = 1.0
+self.epsilon_decay = 0.995
+self.epsilon_min = 0.01
