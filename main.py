@@ -34,10 +34,10 @@ for episode in range(num_episodes):
 
         state = next_state
         total_reward += reward
-        """
+        
         if agent.step % 500 == 0:
             agent.update_target_network()
-        """
+            print(f"Step: {agent.step}, Loss: {loss}")
         if done:
             break
 
@@ -53,15 +53,16 @@ for episode in range(num_episodes):
 
 # Eğitim tamamlandığında sonuçları yazdır
 print("Training completed.")
+print(f"Final Portfolio Value: {env.portfolio_value}")
 print(f"Total Episodes: {num_episodes}")
 print(f"Average Reward: {sum(episode_rewards) / num_episodes}")
 print(f"Max Reward: {max(episode_rewards)}")
 print(f"Min Reward: {min(episode_rewards)}")
 print(f"Average Loss: {sum(filter(None, episode_losses)) / len(filter(None, episode_losses))}")
 
+# Portfolyo değerini yazdır
 
 
-# Define rewards_per_episode, losses, and all_actions
 rewards_per_episode = episode_rewards
 losses = [loss for loss in episode_losses if loss is not None]
 all_actions = [agent.select_action(env.reset()) for _ in range(num_episodes)]
@@ -84,6 +85,5 @@ plt.title("Action Distribution")
 plt.xlabel("Action")
 plt.ylabel("Frequency")
 plt.show()
-
 
 
