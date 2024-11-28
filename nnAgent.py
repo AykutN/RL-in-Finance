@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 
 class QNetwork(nn.Module):
-    def __init__(self, state_dim, action_dim, hidden_dim=128):
+    def __init__(self, state_dim, action_dim, hidden_dim=256):
         super(QNetwork, self).__init__()
         self.linear1 = nn.Linear(state_dim, hidden_dim)
         self.linear2 = nn.Linear(hidden_dim, hidden_dim)
@@ -54,12 +54,12 @@ class ReplayBuffer():
         return (states, actions, rewards, next_states, dones)
 
 class DQNAgent:
-    def __init__(self, state_dim, action_dim, lr=0.0005, gamma = 0.995, buffer_size = 10000, batch_size = 64):
+    def __init__(self, state_dim, action_dim, lr=0.0001, gamma = 0.99, buffer_size = 10000, batch_size = 64):
         self.state_dim = state_dim
         self.action_dim = action_dim
         self.gamma = gamma
 
-        self.epsilon_decay = 0.99
+        self.epsilon_decay = 0.999
         self.epsilon_min = 0.01
         self.epsilon = 1.0
         self.batch_size = batch_size
@@ -80,7 +80,7 @@ class DQNAgent:
 
     def update_target_network(self):
             self.target_network.load_state_dict(self.q_network.state_dict())
-            
+            self.target_network.eval()
 
     def select_action(self, state):
         if np.random.rand() < self.epsilon:
@@ -95,6 +95,9 @@ class DQNAgent:
             return None
 
         states, actions, rewards, next_states, dones = self.buffer.sample(self.batch_size)
+        states = np.nan_to_num(states, nan=0.0, posinf=0.0, neginf=0.0)
+        next_states = np.nan_to_num(next_states, nan=0.0, posinf=0.0, neginf=0.0)
+
         if states is None:
             print("Sampling failed due to NaN values")
             return None
